@@ -1,0 +1,157 @@
+
+.experience-section{
+  background-image: linear-gradient(45deg, rgba(0,0,0, 0.5), rgba(50,50,50, 0.9)), url("/assets/img/desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.text-effect{
+  color: transparent;
+  background-image: linear-gradient(70deg, #009FFD, #2A2A72, #009FFD);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'CoreCircus', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  animation: animate 3s infinite linear;
+}
+@keyframes animate{
+  0%{ background-position: 0; }
+  50%{ background-position: 100%; }
+  100%{ background-position: 0%; }
+}
+.main-timeline{ font-family: 'Roboto', sans-serif; }
+.main-timeline .timeline{
+  width: 57.3%;
+  padding: 0 0 0 80px;
+  margin-bottom: 20px;
+  border: 10px solid #009FFD;
+  border-radius: 90px;
+  float: right;
+  position: relative;
+}
+
+.main-timeline .timeline-content{
+  background-color: transparent;
+  text-align: left;
+  border-radius: 0 90px 90px 0;
+  display: block;
+  position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .content{
+  background-color: transparent;
+  padding: 17px 40px 17px 80px;
+  border-radius: 90px;
+}
+.main-timeline .timeline-year{
+  color: #fff;
+  background: linear-gradient(45deg, #009FFD, #2A2A72);
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 110px;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #009FFD;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5) inset;
+  border-radius: 50%;
+  transform:translateY(-50%);
+  position: absolute;
+  left: -70px;
+  top: 50%;
+}
+.main-timeline .title{
+  color: #009FFD;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+.main-timeline .description{
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin: 0 0 5px 0;
+}
+.main-timeline .timeline:nth-child(even){
+  float: left;
+  padding: 0 80px 0 0;
+}
+.main-timeline .timeline:nth-child(even):before{
+  left:auto;
+  right: 70px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year{
+  left:auto;
+  right: -70px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+  border-radius: 90px 0 0 90px;
+  text-align: right;
+}
+.main-timeline .timeline:nth-child(even) .content{ padding: 17px 80px 17px 40px; }
+
+@media screen and (max-width:1200px){
+  .main-timeline .timeline{ width: 59%; }
+  .main-timeline .timeline-content{ border-radius: 0 92px 92px 0; }
+  .main-timeline .timeline:nth-child(even) .timeline-content{ border-radius: 92px 0 0 92px; }
+  .main-timeline .content{ padding: 25px 40px 25px 80px; }
+  .main-timeline .timeline:nth-child(even) .content{ padding: 25px 80px 25px 40px; }
+}
+@media screen and (max-width:990px){
+  .main-timeline .timeline{ width: 61.7%;}
+}
+@media screen and (max-width:767px){
+  .main-timeline .timeline{ width: 100%; }
+  .main-timeline .timeline:nth-child(even){
+    float: right;
+    padding: 0 0 0 80px;
+  }
+  .main-timeline .timeline:nth-child(even):before{ left:70px; }
+  .main-timeline .timeline:nth-child(even) .timeline-content{
+    border-radius:0 92px 92px 0;
+    text-align: left;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-year{ left: -70px; }
+  .main-timeline .timeline:nth-child(even) .content{ padding: 25px 40px 25px 80px; }
+}
+@media screen and (max-width:479px){
+  .main-timeline{ padding-top: 30px; }
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even){
+    padding: 0;
+    margin-bottom: 60px;
+    border-radius: 10px;
+  }
+  .main-timeline .timeline:before{ display: none;}
+  .main-timeline .timeline-content,
+  .main-timeline .content{
+    border-radius: 0 0 0 0;
+  }
+  .main-timeline .timeline-year,
+  .main-timeline .timeline:nth-child(even) .timeline-year{
+    top: -70px;
+    left: 50%;
+    transform:translateY(0) translateX(-50%) scale(0.7);
+  }
+  .main-timeline .timeline:nth-child(even) .content,
+  .main-timeline .content{
+    text-align: center;
+    padding: 55px 20px 20px;
+  }
+  .main-timeline .title{ font-size: 18px; }
+}
+@media (max-width: 768px) {
+  .experience-section {
+    overflow: auto;
+  }
+  .text-effect{
+    font-size: x-large;
+  }
+}
+a {
+  cursor: default;
+}
