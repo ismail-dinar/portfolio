@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgwWowModule} from 'ngx-wow';
-import {MatCardModule, MatIconModule, MatListModule, MatMenuModule, MatSidenavModule, MatTooltipModule} from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 import { HomeComponent } from './components/pages/home/home.component';
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { ExperienceComponent } from './components/pages/experience/experience.component';
